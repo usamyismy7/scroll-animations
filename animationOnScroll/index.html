@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Animations</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <section data-aos="fade-in">
+      <h1>Hi!</h1>
+      <p>This is my website</p>
+    </section>
+
+    <section>
+      <h2 data-aos="fade-right">Buy my product</h2>
+      <p data-aos="fade-left">
+        The things you own end up owning you. It's only after you lose
+        everything that you're free to do anything
+      </p>
+    </section>
+
+    <section>
+      <h2>It's really good</h2>
+      <div class="logos">
+        <div data-aos="flip-right" class="logo hidden">
+          <img src="./assets/a.png" alt="logo" />
+        </div>
+        <div data-aos="flip-right" class="logo hidden">
+          <img src="./assets/c.png" alt="logo" />
+        </div>
+        <div data-aos="flip-right" class="logo hidden">
+          <img src="./assets/b.png" alt="logo" />
+        </div>
+        <div data-aos="flip-right" class="logo hidden">
+          <img src="./assets/d.png" alt="logo" />
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up-right">
+      <h2>Contact Us</h2>
+      <p>
+        We can discuss your ideas and get results and bring ideas to reality.
+      </p>
+    </section>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: false,
+    });
+  </script>
+</html>
